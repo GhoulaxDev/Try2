@@ -41,7 +41,7 @@ nav ul li a:hover {
 
 /* Redimensionnement des icônes de jeu */
 .jeu {
-    margin-bottom: 10px; /* Réduit la distance entre les jeux */
+    margin-bottom: 2px; /* Réduit la distance entre les jeux */
 }
 
 .jeu img.game-image {
