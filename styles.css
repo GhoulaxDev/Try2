@@ -72,11 +72,11 @@ nav ul li a:hover {
 
 /* Animation au survol des images de jeu */
 .jeu:hover h2 {
-    transform: translateY(50%); /* Déplace le texte vers le haut au survol */
+    transform: translateY(-50%); /* Déplace le texte vers le haut au survol */
 }
 
 .jeu:hover p {
-    transform: translateY(-50%); /* Déplace le texte vers le haut au survol */
+    transform: translateY(100%); /* Déplace le texte vers le haut au survol */
 }
 
 /* Style pour afficher le nombre de CCU en dessous de l'icône */
@@ -88,7 +88,7 @@ nav ul li a:hover {
 
 /* Animation au survol des images de jeu */
 .jeu:hover p:nth-child(2) {
-    transform: translateY(-50%); /* Déplace le texte vers le bas au survol */
+    transform: translateY(100%); /* Déplace le texte vers le bas au survol */
 }
 
 
