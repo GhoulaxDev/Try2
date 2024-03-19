@@ -50,31 +50,12 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Pied de page */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Animation de changement de couleur */
-}
-
-footer ul li a:hover {
-    color: #ff4500; /* Changement de couleur au survol */
+/* Section d'accueil */
+.jeux-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Redimensionnement des icônes de jeu */
@@ -89,4 +70,68 @@ footer ul li a:hover {
 .jeu p {
     text-align: center;
     margin-bottom: 10px; /* Ajouter un espace entre le nom du jeu et l'icône */
+}
+
+/* Section Contact */
+.contact-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation de changement de couleur et de fond */
+}
+
+.contact-buttons a.youtube-btn {
+    background-color: #ff0000; /* Couleur rouge pour YouTube */
+    color: #fff; /* Texte blanc */
+}
+
+.contact-buttons a.discord-btn {
+    background-color: #7289da; /* Couleur bleu pour Discord */
+    color: #fff; /* Texte blanc */
+}
+
+.contact-buttons a.twitter-btn {
+    background-color: #1da1f2; /* Couleur bleu pour Twitter */
+    color: #fff; /* Texte blanc */
+}
+
+/* Animation au survol des boutons de contact */
+.contact-buttons a:hover {
+    background-color: #333; /* Changement de couleur de fond au survol */
+    color: #fff; /* Changement de couleur du texte au survol */
+}
+
+/* Redimensionnement des icônes de réseaux sociaux dans le pied de page */
+footer ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease; /* Animation de transition pour les icônes */
+}
+
+/* Animation au survol des icônes de réseaux sociaux dans le pied de page */
+footer ul li a:hover img {
+    transform: scale(1.2); /* Agrandissement de l'icône au survol */
 }
