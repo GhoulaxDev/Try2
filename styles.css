@@ -41,10 +41,10 @@ nav ul li a:hover {
 
 /* Redimensionnement des icônes de jeu */
 .jeu {
-    margin-bottom: 20px; /* Espacement entre les jeux */
+    margin-bottom: 10px; /* Réduit la distance entre les jeux */
 }
 
-.jeu img {
+.jeu img.game-image {
     width: 256px;
     height: 256px;
     display: block;
@@ -53,17 +53,33 @@ nav ul li a:hover {
     cursor: pointer; /* Curseur indiquant que l'image est cliquable */
 }
 
-
-
 /* Style pour afficher le nom du jeu au-dessus de l'icône */
 .jeu p {
     text-align: center;
     margin-bottom: 10px; /* Ajouter un espace entre le nom du jeu et l'icône */
+    transition: transform 0.3s ease; /* Animation de transformation */
 }
 
 /* Animation au survol des images de jeu */
-.jeu img:hover {
+.jeu img.game-image:hover {
     transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* Animation au survol des images de jeu */
+.jeu:hover p {
+    transform: translateY(-50%); /* Déplace le texte vers le haut au survol */
+}
+
+/* Style pour afficher le nombre de CCU en dessous de l'icône */
+.jeu p:nth-child(2) {
+    text-align: center;
+    margin-top: 10px; /* Ajouter un espace entre l'icône et le texte */
+    transition: transform 0.3s ease; /* Animation de transformation */
+}
+
+/* Animation au survol des images de jeu */
+.jeu:hover p:nth-child(2) {
+    transform: translateY(50%); /* Déplace le texte vers le bas au survol */
 }
 
 /* Section Contact */
@@ -75,31 +91,19 @@ nav ul li a:hover {
 .contact-buttons a {
     display: inline-block;
     margin: 0 10px;
-    padding: 10px 20px;
+    padding: 10px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50%; /* Pour faire des boutons ronds */
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Animation de changement de couleur, de fond et de transformation */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation de changement de couleur et de transformation */
     cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
 }
 
 .contact-buttons a:hover {
-    background-color: #333; /* Changement de couleur de fond au survol */
-    color: #fff; /* Changement de couleur du texte au survol */
     transform: scale(1.1); /* Agrandissement au survol */
 }
 
-.contact-buttons a.youtube-btn {
-    background-color: #ff0000; /* Couleur rouge pour YouTube */
-    color: #fff; /* Texte blanc */
-}
-
-.contact-buttons a.discord-btn {
-    background-color: #7289da; /* Couleur bleu pour Discord */
-    color: #fff; /* Texte blanc */
-}
-
-.contact-buttons a.twitter-btn {
-    background-color: #1da1f2; /* Couleur bleu pour Twitter */
-    color: #fff; /* Texte blanc */
+.contact-buttons a img {
+    width: 64px; /* Redimensionnement des images */
+    height: 64px;
 }
