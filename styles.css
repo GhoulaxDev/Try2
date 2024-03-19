@@ -53,6 +53,8 @@ nav ul li a:hover {
     cursor: pointer; /* Curseur indiquant que l'image est cliquable */
 }
 
+
+
 /* Style pour afficher le nom du jeu au-dessus de l'icône */
 .jeu p {
     text-align: center;
