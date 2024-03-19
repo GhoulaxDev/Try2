@@ -34,23 +34,34 @@ nav ul li a:hover {
 /* Section d'accueil */
 .jeux-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Espace autour des éléments */
     align-items: center;
     flex-wrap: wrap;
 }
 
 /* Redimensionnement des icônes de jeu */
+.jeu {
+    margin-bottom: 20px; /* Espacement entre les jeux */
+}
+
 .jeu img {
     width: 256px;
     height: 256px;
-    display: block; /* Assurez-vous que l'image est affichée en tant que bloc pour appliquer la marge automatique */
-    margin: auto; /* Centrer l'image horizontalement */
+    display: block;
+    margin: auto;
+    transition: transform 0.3s ease; /* Animation de transition */
+    cursor: pointer; /* Curseur indiquant que l'image est cliquable */
 }
 
 /* Style pour afficher le nom du jeu au-dessus de l'icône */
 .jeu p {
     text-align: center;
     margin-bottom: 10px; /* Ajouter un espace entre le nom du jeu et l'icône */
+}
+
+/* Animation au survol des images de jeu */
+.jeu img:hover {
+    transform: scale(1.1); /* Agrandissement au survol */
 }
 
 /* Section Contact */
@@ -66,7 +77,14 @@ nav ul li a:hover {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Animation de changement de couleur et de fond */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Animation de changement de couleur, de fond et de transformation */
+    cursor: pointer; /* Curseur indiquant que le bouton est cliquable */
+}
+
+.contact-buttons a:hover {
+    background-color: #333; /* Changement de couleur de fond au survol */
+    color: #fff; /* Changement de couleur du texte au survol */
+    transform: scale(1.1); /* Agrandissement au survol */
 }
 
 .contact-buttons a.youtube-btn {
@@ -82,10 +100,4 @@ nav ul li a:hover {
 .contact-buttons a.twitter-btn {
     background-color: #1da1f2; /* Couleur bleu pour Twitter */
     color: #fff; /* Texte blanc */
-}
-
-/* Animation au survol des boutons de contact */
-.contact-buttons a:hover {
-    background-color: #333; /* Changement de couleur de fond au survol */
-    color: #fff; /* Changement de couleur du texte au survol */
 }
