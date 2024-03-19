@@ -59,6 +59,11 @@ nav ul li a:hover {
     margin-bottom: 10px; /* Ajouter un espace entre le nom du jeu et l'icône */
     transition: transform 0.3s ease; /* Animation de transformation */
 }
+.jeu h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Ajouter un espace entre le nom du jeu et l'icône */
+    transition: transform 0.3s ease; /* Animation de transformation */
+}
 
 /* Animation au survol des images de jeu */
 .jeu img.game-image:hover {
@@ -67,7 +72,7 @@ nav ul li a:hover {
 
 /* Animation au survol des images de jeu */
 .jeu:hover p {
-    transform: translateY(-50%); /* Déplace le texte vers le haut au survol */
+    transform: translateY(50%); /* Déplace le texte vers le haut au survol */
 }
 
 /* Style pour afficher le nombre de CCU en dessous de l'icône */
@@ -81,6 +86,7 @@ nav ul li a:hover {
 .jeu:hover p:nth-child(2) {
     transform: translateY(50%); /* Déplace le texte vers le bas au survol */
 }
+
 
 /* Section Contact */
 .contact-buttons {
